@@ -1,0 +1,83 @@
+<app-header></app-header>
+
+  <div class="bradcumb-area cart overlay-bg-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="bradcumb text-center">
+            <h3>Booking</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>Booking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-area pt-90">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="table-responsive mb-30">
+            <table class="table">
+              <thead>
+                <tr>
+                  <!-- <th scope="col"><p>Booking ID</p></th> -->
+                  <th scope="col"><p>User Name</p></th>
+                  <th scope="col"><p>Package Name</p></th>
+                  <!-- <th scope="col"><p>Booking Type</p></th>
+                            <th scope="col"><p>Event</p></th>
+                            <th scope="col"><p>Food Court</p></th>
+                            <th scope="col"><p>Decoration</p></th>
+                            <th scope="col"><p>Room</p></th>
+                            <th scope="col"><p>No Of People</p></th>
+                            <th scope="col"><p>Date</p></th>
+                            <th scope="col"><p>Time</p></th> -->
+                  <th scope="col"><p>Charges</p></th>
+                  <th scope="col"><p>Status</p></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let bd of bookingData; let no = index">
+                  <!-- <th scope="row">
+							                	{{no+1}}
+							                </th> -->
+
+                  <th scope="row">{{ bd.userName }}</th>
+                  <th scope="row">{{ bd.packageName }}</th>
+                  <!-- <th scope="row">{{bd.bookingType}}</th>
+                     <th scope="row">{{bd.includeEvent}}</th>
+                     <th scope="row">{{bd.includeFoodCourt}}</th>
+                     <th scope="row">{{bd.includeDecorations}}</th>
+                     <th scope="row">{{bd.includeRooms}}</th>
+                     <th scope="row">{{bd.noOfPeoples}}</th>
+                     <th scope="row">{{bd.eventDate}}</th>
+                     <th scope="row">{{bd.eventTime}}</th>-->
+                  <th scope="row">{{ bd.bookingCharges }}</th>
+                  <th scope="row">{{ bd.bookingStatus }}</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Start Partner Area -->
+<div class="partner-area pt-110 pb-220">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- Start section title -->
+        <div class="section-title text-center">
+         
+        </div>
+        <!-- End section title -->
+      </div>
+    </div>
+ 
+  </div>
+</div>
+<!-- End Partner Area -->
+<app-footer></app-footer>

@@ -1,0 +1,43 @@
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4>Show Package</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-md">
+                    <tr>
+                      <th>ID</th>
+                      <th>Package Name</th>
+                      <th>Description</th>
+                      <th>Image</th>
+                      <th>Charges</th>
+                      <th>Action</th>
+                    </tr>
+                    <tr *ngFor="let pd of packageData; let no=index;">
+                      <td>{{no+1}}</td>
+                       <td>{{pd.packageName}}</td>
+                       <td>{{pd.packageDescription}}</td>
+                       <td><img src="{{this.baseUrl + pd.packageImage}}" height="150" width="150"/></td>
+                       <td>{{pd.packageCharges}}</td>
+                       
+                       <td><a class="btn btn-action bg-purple mr-1" data-toggle="tooltip" [routerLink]="['/admin/editPackage',pd.packageIDPK]" title="Edit"><i
+                        class="fas fa-pencil-alt"></i></a> <a class="btn btn-danger btn-action"
+                      data-toggle="tooltip" title="Delete" (click)="deletepackage(pd.packageIDPK)"><i class="fas fa-trash"></i></a></td>										
+                   </tr> 
+                  </table>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+  </div>
+  <app-footer></app-footer>

@@ -1,0 +1,55 @@
+
+                   <body>
+                 
+                    <app-header></app-header>
+                 
+                    <div class="bradcumb-area adventure-1 overlay-bg-2">
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col">
+                            <div class="bradcumb text-center">
+                              <h3>Gallery </h3>
+                              <ul>
+                                <li><a href="#">Home</a></li>
+                                <li>Gallery</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="adventure-grid-area pt-80 pb-105">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <div class="adventure-select">
+                              <form action="#" class="adventure-select-form">
+                                
+                                <div class="adventure-area pb-90 pt-50">
+                                  <div class="container">
+                                    <div class="row justify-content-center">
+                                      <div class="col-xl-6 col-md-8">
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-3 col-sm-6" *ngFor="let gd of galleryData; let no=index;">
+                                        <div class="single-adventure" >
+                                          <img src="{{this.baseUrl + gd.galleryImage}}" alt="adventure">
+                                          
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="selling-tips-area pb-80 pt-120">
+                                        </div>
+                                      </div>
+                                  </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <app-footer></app-footer>
+                  </body>
+    

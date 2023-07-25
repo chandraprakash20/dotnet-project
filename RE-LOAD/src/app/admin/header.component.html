@@ -1,0 +1,116 @@
+<div class="navbar-bg"></div>
+<nav class="navbar navbar-expand-lg main-navbar">
+
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="./assets/img/profile.jpeg"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello Admin</div>
+              
+              <div class="dropdown-divider"></div>
+              <a (click)="logout()" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="/admin"> <img alt="image"  src="./assets/img/logo.jpeg" class="header-logo" style=" height: 18px;" /> 
+              <br><span class="logo-name"> RE-LOAD</span>
+            </a>
+            
+          </div>
+          <div class="sidebar-user">
+            <div class="sidebar-user-picture">
+              <img alt="image" src="./assets/img/profile.jpeg">
+            </div>
+            <div class="sidebar-user-details">
+              <div class="user-role">Admin</div>
+            </div>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Menu</li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span> Show Booking</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/admin/showBooking">Show Booking</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Event</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="/admin/addEvent">Add Event</a></li>
+                <li><a class="nav-link" href="/admin/showEvent">Show Event</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Faq</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="/admin/addFaq">Add Faq</a></li>
+                <li><a class="nav-link" href="/admin/showFaq">Show Faq</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Food Court</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="/admin/addFoodcourt">Add Food Court</a></li>
+                <li><a class="nav-link" href="/admin/showFoodcourt">Show Food Court</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Gallery</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="/admin/addGallery">Add Gallery</a></li>
+                <li><a class="nav-link" href="/admin/showGallery">Show Gallery</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Inquiry</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/admin/showInquiry">Show Inquiry</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Offers</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="/admin/addOffers">Add Offers</a></li>
+                <li><a class="nav-link" href="/admin/showOffers">Show Offers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Package</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="/admin/addPackage">Add Package</a></li>
+                <li><a class="nav-link" href="/admin/showPackage">Show Package</a></li>  
+              </ul>
+            </li>
+            <!-- <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>Review</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/admin/showReview">Show Review</a></li>
+              </ul>
+            </li>-->
+            <li class="dropdown active"> 
+              <a href="#" class="nav-link has-dropdown"><i data-feather="monitor"></i><span>User</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/admin/showUser">Show User</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </aside>
+      </div>

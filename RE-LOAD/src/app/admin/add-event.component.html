@@ -1,0 +1,47 @@
+  <div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <form ngNativeValidate #form="ngForm" (ngSubmit)="onsubmit(form)">
+                <div class="card-header">
+                  <h4>Add Events</h4>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label>Event Name</label>
+                    <input type="text" name="eventname" id="eventname" class="form-control"  ngModel required
+                    #eventname="ngModel" [(ngModel)]="this.EventData.eventName" >
+                  </div>
+                  <div class="form-group mb-0">
+                    <label>Description</label>
+                    <textarea class="form-control" name="description" id="description" ngModel required
+                    #description="ngModel" [(ngModel)]="this.EventData.eventDescription"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" name="image" id="image"  class="form-control" #image
+                    (change)="uploadFile(image.files)">
+                  </div>
+                  <div class="form-group">
+                    <label> Charges</label>
+                    <input type="text" name="charges" id="charges" class="form-control" ngModel required
+                    #charges="ngModel" [(ngModel)]="this.EventData.eventCharges">
+                  </div>
+                  
+                </div>
+                <div class="card-footer text-right">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <app-footer></app-footer>

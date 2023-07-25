@@ -1,0 +1,59 @@
+			<!-- Start Header -->
+		
+			<header id="header" class="header-area absulate-header">
+
+				<div class="navigation-area">
+					<div class="container">
+						<div class="row navigation-bg">
+							<div class="col-lg-2 col-sm-4 col-4">
+								<!-- Start site logo -->
+								<div class="site-logo">
+									<a href="index.html"><img src="./assets/img/logo5.jpeg" ></a>
+								</div>
+								<!-- End site logo -->
+							</div>
+							
+							<div class="col-lg-8 col-sm-4 col-2 order-two">
+								
+								<!-- Start Navigation -->
+								<div class="main-menu-wrap">
+									
+									<nav class="gene-nav">
+										
+										<ul class="menu">
+											<li><a href="/user/">Home</a></li>
+                                          <li ><a href="/user/showPackage">Packages</a></li>
+                                            											
+                                            
+											
+											<li ><a href="/user/showGallery">Gallery</a></li>
+											<li><a href="/user/showEvent">Events</a>
+											    
+											</li><li><a href="/user/addInquiry">Contact Us</a>
+											    
+											</li>
+											<li ><a *ngIf="isLoggedIn" href="/user/showBooking">My Account</a></li>
+											
+										</ul>
+									</nav> 
+								</div>
+								<!-- Mobile Menu Active here. Don't Remove it -->
+								<div class="mobile-menu-area"></div>
+								<!-- End Navigation -->
+							</div>
+							<div class="col-lg-2 col-sm-4 col-6 order-one">
+								<!-- Start login and cart -->
+								<div class="login-cart">
+									<ul>
+										<li><a *ngIf="isLoggedIn" (click)="logout()" style="color: white;"><i class="far fa-user"></i>LogOut</a></li>
+										<li><a *ngIf="!isLoggedIn"href="/user/Login"><i class="far fa-user"></i>LOGIN</a></li>
+										
+									</ul>
+								</div>
+								<!-- End login and cart -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End Header -->

@@ -1,0 +1,95 @@
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <form  ngNativeValidate #form="ngForm" (ngSubmit)="onsubmit(form)">
+                <div class="card-header">
+                  <h4>Add Bookings</h4>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" name="userName" id="userName" class="form-control"  ngModel required
+                    #userName="ngModel" [(ngModel)]="this.bookingData.userName" >
+                  </div>
+                  <div class="form-group">
+                    <label>Package Name</label>
+                    <input type="text" name="packageName" id="packageName" class="form-control"  ngModel required
+                    #packageName="ngModel" [(ngModel)]="this.bookingData.packageName" >
+                  </div>
+                  <div class="form-group">
+                    <label>Booking Type</label>
+                    <input type="text" name="bookingType" id="bookingType" class="form-control"  ngModel required
+                    #bookingType="ngModel" [(ngModel)]="this.bookingData.bookingType" >
+                  </div>
+                  <div class="form-group">
+                    <label>Events</label>
+                    <input type="text" name="includeEvent" id="includeEvent" class="form-control"  ngModel required
+                    #includeEvent="ngModel" [(ngModel)]="this.bookingData.includeEvent" >
+                  </div>
+                  <div class="form-group">
+                    <label>Food Court</label>
+                    <input type="text" name="includeFoodCourt" id="includeFoodCourt" class="form-control"  ngModel required
+                    #includeFoodCourt="ngModel" [(ngModel)]="this.bookingData.includeFoodCourt" >
+                  </div>
+                  <div class="form-group">
+                    <label>Decoration</label>
+                    <input type="text" name="includeDecorations" id="includeDecorations" class="form-control"  ngModel required
+                    #includeDecorations="ngModel" [(ngModel)]="this.bookingData.includeDecorations" >
+                  </div>
+                  <div class="form-group">
+                    <label>Room</label>
+                    <input type="text" name="includeRooms" id="includeRooms" class="form-control"  ngModel required
+                    #includeRooms="ngModel" [(ngModel)]="this.bookingData.includeRooms" >
+                  </div>
+                  <div class="form-group">
+                    <label>No Of People</label>
+                    <input type="text" name="noOfPeoples" id="noOfPeoples" class="form-control"  ngModel required
+                    #noOfPeoples="ngModel" [(ngModel)]="this.bookingData.noOfPeoples" >
+                  </div>
+                  <div class="form-group">
+                    <label>Date</label>
+                    <input type="text" name="eventDate" id="eventDate" class="form-control"  ngModel required
+                    #eventDate="ngModel" [(ngModel)]="this.bookingData.eventDate" >
+                  </div>
+                  <div class="form-group">
+                    <label>Time</label>
+                    <input type="text" name="eventTime" id="eventTime" class="form-control"  ngModel required
+                    #eventTime="ngModel" [(ngModel)]="this.bookingData.eventTime" >
+                  </div>
+                  <div class="form-group">
+                    <label>Charge</label>
+                    <input type="text" name="bookingCharges" id="bookingCharges" class="form-control"  ngModel required
+                    #bookingCharges="ngModel" [(ngModel)]="this.bookingData.bookingCharges" >
+                  </div>
+                  <div class="form-group">
+                    <label>Booking Status</label>
+                    <select type="text" name="bookingStatus" id="bookingStatus" class="form-control"  ngModel required
+                    #bookingStatus="ngModel" [(ngModel)]="this.bookingData.bookingStatus" >
+                    <option value="select">Select Type</option>  
+                    <option >Confirmed</option>  
+                      
+                      <option >Pending</option>
+                    
+                </select>   
+                    
+                </div>
+                        
+                      
+                </div>
+                <div class="card-footer text-right">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <app-footer></app-footer>

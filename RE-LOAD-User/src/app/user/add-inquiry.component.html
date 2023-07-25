@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Site Title -->
+        <title>Contact</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+		
+</head>
+    <body>
+        <!-- Start Preloader -->
+		<div class="preloader-wrap">
+			<div class="cube-wrapper">
+				<div class="cube-folding">
+					<span class="leaf1"></span>
+					<span class="leaf2"></span>
+					<span class="leaf3"></span>
+					<span class="leaf4"></span>
+				</div>
+				<span class="loading" data-name="Loading">Loading</span>
+			</div>
+		</div>
+		<!-- End Preloader -->
+		<!-- Start Wrapper -->
+		<div class="wrapper">
+		<app-header></app-header>
+			<!-- Start Bradcumb Area -->
+			<div class="bradcumb-area style-1 overlay-bg-4">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col">
+							<!-- Start bradcumb -->
+							<div class="bradcumb text-center">
+								<h3>Contact</h3>
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li>Contact</li>
+								</ul>
+							</div>
+							<!-- End bradcumb -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Bradcumb Area -->
+			<!-- Start Contact Area -->
+			<div class="contact-area pt-90 pb-95">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<!-- Start section title -->
+							<div class="section-title text-center">
+								<p class="title">Contact Information</p>
+								<h2>We Would Love To<span></span> hear From You</h2>
+								<p>Travel demand is high! Call and chat wait times are longer than normal. We’re working on it and appreciate your patience. It's easy to reach us and we'd love to hear from you. Whether you're raring to get adventuring or you’re just starting to dream, get in touch and we'll help you on your way.</p>
+							</div>
+							<!-- End section title -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<!-- Start single contact -->
+							<div class="single-contact text-center">
+								<div class="contact-thumb">
+									<img src="./assets/img/icon/c1.png" alt="">
+								</div>
+								<div class="contact-content">
+									<h4>Our Location</h4>
+									<p>Level 1, 14-16 Church Street, VIP Road, Surat</p>
+								</div>
+							</div>
+							<!-- End single contact -->
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<!-- Start single contact -->
+							<div class="single-contact text-center">
+								<div class="contact-thumb">
+									<img src="./assets/img/icon/c2.png" alt="">
+								</div>
+								<div class="contact-content">
+									<h4>Let’s Chat!</h4>
+									<p>Mon - Sat: 9am to 8pm EST Sun: Closed</p>
+									<a href="#" class="chat">Chat with us <i class="fal fa-angle-right"></i></a>
+								</div>
+							</div>
+							<!-- End single contact -->
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<!-- Start single contact -->
+							<div class="single-contact text-center">
+								<div class="contact-thumb">
+									<img src="./assets/img/icon/c3.png" alt="">
+								</div>
+								<div class="contact-content">
+									<h4>Phone And Fax</h4>
+									<p>Mobile: <a href="tel:+008012345678">+123-456-7890</a></p>
+									<p>Phone: <a href="tel:+008012345678">+12-3456-6789</a></p>
+									<p>Fax: <a href="tel:+008012345678">+2-3456-6789</a></p>
+								</div>
+							</div>
+							<!-- End single contact -->
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<!-- Start single contact -->
+							<div class="single-contact text-center">
+								<div class="contact-thumb">
+									<img src="./assets/img/icon/c4.png" alt="">
+								</div>
+								<div class="contact-content">
+									<h4>Email Address</h4>
+									<a href="mailto:yourname@email.com">admin@gmail.com</a>
+									<a href="mailto:yourname@email.com">info@gmail.com</a>
+									<a href="#">www.reload.com</a>
+								</div>
+							</div>
+							<!-- End single contact -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Contact Area -->
+			<!-- Start Contact Google map Area -->
+			<div class="google-map-area">
+				<!-- Start Google Map -->
+				<div class="google-map-wrap">
+					<!-- Start Map -->
+					<div class="fullwide-map"> 
+						<div id="map_canvas" style="width:100%;height:760px;"></div>
+					</div>
+					<!-- End Map -->
+				</div>
+				<!-- End Google Map -->
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<!-- Start section title -->
+							<div class="section-title pt-80">
+								<h3>Inquiry Form</h3>
+							</div>
+							<!-- End section title -->
+							<div class="contact-p-contact pb-150">
+								<form ngNativeValidate action="" method="post" class="gane-form" #form="ngForm" (ngSubmit)="onsubmit(form)" style="margin-bottom:70px;">
+									<div class="single-field half-field">
+										<input type="text" class="form-control" name="name" id="inquiryName"  ngModel required
+                    #inquiryName="ngModel" [(ngModel)]="this.inquiryData.inquiryName" placeholder="Your Name">
+									</div>
+									<div class="single-field half-field-last">
+										<input type="email" class="form-control" name="email" id="inquiryEmail"  ngModel required
+                    #inquiryEmail="ngModel" [(ngModel)]="this.inquiryData.inquiryEmail" placeholder="Email">
+									</div>
+									<div class="single-field half-field">
+										<input type="text" class="form-control" name="city" id="inquiryCity"  ngModel required
+                    #inquiryCity="ngModel" [(ngModel)]="this.inquiryData.inquiryCity" placeholder="City">
+									</div>
+									<div class="single-field half-field-last">
+										<input type="date" class="form-control" name="date" id="inquiryDate"  ngModel required
+                    #inquiryDate="ngModel" [(ngModel)]="this.inquiryData.inquiryDate" placeholder="Date">
+									</div>
+									<div class="single-field half-field">
+                    <input type="text" class="form-control" name="noofpeople" id="inquiryNoOfPeople"  ngModel required
+                    #inquiryNoOfPeople="ngModel" [(ngModel)]="this.inquiryData.inquiryNoOfPeople" placeholder="No Of People">
+									</div>
+                  
+									<div class="single-field half-field-last">
+										<input type="tel" class="form-control" name="contactno" id="inquiryContactNo"  ngModel required
+                    #inquiryContactNo="ngModel" [(ngModel)]="this.inquiryData.inquiryContactNo" placeholder="Contact No">
+									</div>
+									<div class="single-field ">
+									<select class="form-control" name="packageNameIDFK" id="packageNameIDFK" ngModel required
+									#packageNameIDFK="ngModel" [(ngModel)]="this.inquiryData.packageNameIDFK" >  
+										<option value="0">Select Package</option>  
+										
+										
+										<option *ngFor="let pd of packageData" value="{{pd.packageIDPK}}">{{pd.packageName}}</option> 
+									</select>   
+									</div>
+									<div class="single-field">
+										<textarea class="form-control" rows="2" name="message" id="inquiryMessage"  ngModel required
+                    #inquiryMessage="ngModel" [(ngModel)]="this.inquiryData.inquiryMessage" placeholder="Enter your message"></textarea>
+									</div>
+                  
+									<button class="btn btn-theme" >Send Message</button> 
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Contact Google map Area -->
+			
+			<app-footer></app-footer>
+
+		</div>
+        <!-- End Wrapper -->
+	

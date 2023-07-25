@@ -1,0 +1,42 @@
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <form ngNativeValidate #form="ngForm" (ngSubmit)="onsubmit(form)">
+                <div class="card-header">
+                  <h4>Add Offers</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Promo Code</label>
+                        <input type="text" name="promocode" id="promocode" class="form-control" ngModel required
+                        #promocode="ngModel" [(ngModel)]="this.offersData.offersPromocode">
+                      </div>
+                    <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" name="image" id="image" class="form-control" #image
+                    (change)="uploadFile(image.files)">
+                  </div>
+                  <div class="form-group mb-0">
+                    <label>Description</label>
+                    <textarea class="form-control" name="description" id="description" ngModel required
+                    #description="ngModel" [(ngModel)]="this.offersData.offersDescription"></textarea>
+                  </div>
+                  
+                </div>
+                <div class="card-footer text-right">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <app-footer></app-footer>

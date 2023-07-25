@@ -1,0 +1,320 @@
+<app-header></app-header>
+			<!-- Start Slider Area -->
+			<section class="slider-area">
+				<div id="welcome-slide" class="slide-controls owl-carousel">
+					<!-- Start Single Slide -->
+					<div class="single-slide overlay-bg-2">
+						<div class="slide-thumb shape-1">
+							<img src="./assets/img/slider/slide-1.jpg" alt="">
+							<!-- Start Slide Content -->
+							<div class="slide-content">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-10 col-sm-12">
+											<!-- Start Slide content wrap -->
+											<div class="slide-content-area">
+												<!-- Start Single slide content	-->
+												<div class="single-slide-content text-center">
+													<div class="content-text">
+														<h1>Get ready  <span></span> To enter the FUN – ZONE!</h1>
+														<h2>It's time for new <strong>Escapes, Thrills</strong> <span></span> and <strong>Experiences</strong></h2>
+													</div>
+												</div>
+												<!-- End Single slide content	-->
+											</div>
+											<!-- End Slide content wrap-->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Slide Content -->
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<!-- End Slider Area -->
+			<!-- Start Quick Icon Area -->
+			<div class="quick-icon-area pb-90">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-sm-4">
+							<!-- Start single quick icon -->
+							<div class="single-quick-icon text-center">
+								<div class="quick-icon-content">
+									<a href="/user/trampoline"><img height="100px" width="100px" src="./assets/img/icon/trampoline.png" alt="">
+									<p>Trampoline</p></a>
+								</div>
+							</div>
+							<!-- End single quick icon -->
+						</div>
+						<div class="col-lg-2 col-sm-4">
+							<!-- Start single quick icon -->
+							<div class="single-quick-icon text-center">
+								<div class="quick-icon-content">
+									<a href="/user/bowlingAlle"><img height="100px" width="100px" src="./assets/img/icon/bowling-ball.png" alt="">
+									<p>Bowling-alle</p></a>
+								</div>
+							</div>
+							<!-- End single quick icon -->
+						</div>
+						<div class="col-lg-2 col-sm-4">
+							<!-- Start single quick icon -->
+							<div class="single-quick-icon text-center">
+								<div class="quick-icon-content">
+									<a href="/user/jumpingPark"><img  height="100px" width="100px"  src="./assets/img/icon/long-jumping.png" alt="">
+									<p>Jumpin park</p></a>
+								</div>
+							</div>
+							<!-- End single quick icon -->
+						</div>
+						<div class="col-lg-2 col-sm-4">
+							<!-- Start single quick icon -->
+							<div class="single-quick-icon text-center">
+								<div class="quick-icon-content">
+									<a href="/user/arcadeGames"><img height="100px" width="100px" src="./assets/img/icon/arcade.png" alt="">
+									<p>Arcade-games</p></a>
+								</div>
+							</div>
+							<!-- End single quick icon -->
+						</div>
+						<div class="col-lg-2 col-sm-4">
+							<!-- Start single quick icon -->
+							<div class="single-quick-icon text-center">
+								<div class="quick-icon-content">
+									<a href="/user/virtualReality"><img height="100px" width="100px" src="./assets/img/icon/virtual-reality.png" alt="">
+									<p>Virtual-reality</p></a>
+								</div>
+							</div>
+							<!-- End single quick icon -->
+						</div>
+						<div class="col-lg-2 col-sm-4">
+							<!-- Start single quick icon -->
+							<div class="single-quick-icon text-center">
+								<div class="quick-icon-content">
+									<a href="/user/shootingRange"><img height="100px" width="100px" src="./assets/img/icon/shooting-range.png" alt="">
+									<p>shooting-range</p></a>
+								</div>
+							</div>
+							<!-- End single quick icon -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Quick Icon Area -->
+			<!-- Start About Area -->
+			<div class="about-area pb-115">
+				<div class="about-bg">
+					<img src="./assets/img/about/101.jpg" alt="">
+				</div>
+				<div class="container">	
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-6">
+							<!-- Start section title -->
+							<h1><p class="title">GET TO KNOW US</p></h1>
+							<h2>Most Happening Game Zone in Surat!</h2>
+							<!-- End section title -->
+							<div class="about-content">
+								<p>Re-Load is an ultimate game zone in Surat with unlimited fun & games for kids as well as adults. It’s about inspiring everyone to kill their boredom and indulge in an atmosphere of fun. Re-Load marries Arcade Games, Bowling, Inflatable Park, Trampoline Park, Events, and Dining into an evolved, interactive and immersive social experience for family, friends and children like.</p>
+								<!-- <a href="#" class="btn btn-theme">Get To Know Our Values</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- End About Area -->
+			<!-- Start Advencher Area -->
+			<div class="adventure-area pb-90 pt-50">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xl-6 col-md-8">
+							<!-- Start section title -->
+							<div class="section-title text-center">
+								<p class="title">Browse by GAmes</p>
+								<h2>Your best adventure <span></span> YET, starts here</h2>
+							</div>
+							<!-- End section title -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6" *ngFor="let pd of packageData; let no=index;">
+							<!-- start single adventure -->
+							<div class="single-adventure" >
+								<a (click)="add(pd.packageIDPK)"><img src="{{this.baseUrl + pd.packageImage}}" alt="adventure" style="height: 250px;"></a>
+								<div class="adventure-content"> 
+		
+									<a (click)="add(pd.packageIDPK)"><h5>{{pd.packageName}}</h5></a>
+									<p>{{pd.packageDescription}}</p>
+								</div>
+							</div>
+							<!-- end single adventure -->
+						
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xl-6 col-md-8">
+					<!-- Start section title -->
+					<div class="section-title text-center">
+						<p class="title">BEST Offers</p>
+						<h2>Top Offers and Deals 
+						</h2>
+						<a href="/user/showOffers" class="btn btn-theme mt-30">See all the Offers</a>
+					</div>
+					<!-- End section title -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6"  *ngFor="let od of offersData; let no=index;">
+					<!-- start single adventure -->
+					<div class="single-adventure" >
+						<a href="/user/showOffers"><img src="{{this.baseUrl + od.offersPhoto}}" alt="adventure" style="height: 250px;"></a>
+						<div class="adventure-content"> 
+
+							<h5>{{od.offersPromocode}}</h5>
+							<p>{{od.offersDescription}}</p>
+						</div>
+					</div>
+					<!-- end single adventure -->
+				
+		</div>
+	</div>
+			
+			<!-- End Advencher Area -->
+			
+						</div>
+					
+						
+				</div>
+			
+			
+			<!-- Start Home Blog Area -->
+			<div class="home-blog-area pt-100 pb-80 pb-res pb0-320">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-9 col-sm-12">
+							<!-- Start section title -->
+							<div class="section-title text-center">
+								<a href="/user/showGallery"><p class="title">Gallery</p></a>
+								
+							</div>
+							<!-- End section title -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6" *ngFor="let gd of galleryData;">
+							<!-- Start single post blog -->
+							<div class="single-post-blog">
+								<div class="post-thumbnail">
+									<a href="/user/showGallery"><img src="{{this.baseUrl + gd.galleryImage}}" alt=""></a>
+								</div>
+								
+							
+							</div>
+							<!-- End single post blog -->
+						</div>
+						
+					</div>
+					
+						</div>
+						<!-- End single guide -->
+					</div>
+				
+					<div class="home-blog-area pt-100 pb-80 pb-res pb0-320">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-9 col-sm-12">
+									<!-- Start section title -->
+									<div class="section-title text-center">
+										<a href="/user/showFoodcourt"><p class="title">Food Court</p></a>
+										
+
+									</div>
+									<!-- End section title -->
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-sm-6" *ngFor="let fd of foodCourtData; let no=index;">
+									<!-- Start single post blog -->
+									<div class="single-post-blog">
+										<div class="post-thumbnail">
+											<a href="/user/showFoodcourt" ><img src="{{this.baseUrl + fd.foodCourtImage}}" alt=""></a>
+											
+											<h5>{{fd.foodCourtName}}</h5>
+											<p>{{fd.foodCourtDescription}}</p>
+										</div>
+										
+									
+									</div>
+									<!-- End single post blog -->
+								</div>
+								
+							</div>
+							
+								</div>
+								<!-- End single guide -->
+							</div>
+
+			<!-- End Home Blog Area -->
+			
+			<!-- Start Partner Area -->
+			<div class="partner-area pb-220">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<!-- Start section title -->
+							<div class="section-title text-center">
+								<p class="title">Our Partners</p>
+								<h2>We team up with the best to give you<span></span> an unmatchable experience</h2>
+							</div>
+							<!-- End section title -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="partner-wrap owl-carousel">
+								<!-- Start single partner -->
+								<div class="single-partner">
+									<img class="bottom" src="./assets/img/partner/1.jpg" alt="">
+									<img class="top" src="./assets/img/partner/1-1.jpg" alt="">
+								</div>
+								<!-- End single partner -->
+								<!-- Start single partner -->
+								<div class="single-partner">
+									<img class="bottom" src="./assets/img/partner/2.jpg" alt="">
+									<img class="top" src="./assets/img/partner/2-2.jpg" alt="">
+								</div>
+								<!-- End single partner -->
+								<!-- Start single partner -->
+								<div class="single-partner">
+									<img class="bottom" src="./assets/img/partner/3.jpg" alt="">
+									<img class="top" src="./assets/img/partner/3-3.jpg" alt="">
+								</div>
+								<!-- End single partner -->
+								<!-- Start single partner -->
+								<div class="single-partner">
+									<img class="bottom" src="./assets/img/partner/4.jpg" alt="">
+									<img class="top" src="./assets/img/partner/4-4.jpg" alt="">
+								</div>
+								<!-- End single partner -->
+								<!-- Start single partner -->
+								<div class="single-partner">
+									<img class="bottom" src="./assets/img/partner/5.jpg" alt="">
+									<img class="top" src="./assets/img/partner/5-5.jpg" alt="">
+								</div>
+								<!-- End single partner -->
+								<!-- Start single partner -->
+								<div class="single-partner">
+									<img class="bottom" src="./assets/img/partner/6.jpg" alt="">
+									<img class="top" src="./assets/img/partner/6-6.jpg" alt="">
+								</div>
+								<!-- End single partner -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Partner Area -->
+			<app-footer></app-footer>
+			

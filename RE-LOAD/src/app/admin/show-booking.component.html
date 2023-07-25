@@ -1,0 +1,63 @@
+<div class="main-content">
+  <section class="section">
+    <div class="section-body">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>Show Booking</h4>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-striped table-md">
+                  <tr>
+                    <th>ID</th>
+                    <th>user</th>
+                    <th>Package</th>
+                    <!-- <th>bookingName</th> -->
+                    <th>bookingType</th>
+                    <th>includeEvent</th>
+                    <th>includeFoodCourt</th>
+                    <th>includeDecorations</th>
+                    <th>includeRooms</th>          
+                    <th>noOfPeoples</th>
+                    <th>eventDate</th>
+                    <th>eventTime</th>
+                    <th>bookingCharges</th>
+                    <th>bookingStatus</th>
+                    <th>Action</th>              
+                  </tr>
+                  <tr *ngFor="let bd of bookingData; let no=index;">
+                    <td>{{no+1}}</td>
+                     <!-- <td>{{bd.userIDFK}}</td> -->
+                     <td>{{bd.userName}}</td>
+                     <!-- <td>{{bd.packageIDFK}}</td> -->
+                     <td>{{bd.packageName}}</td>
+                     <!-- <td>{{bd.bookingName}}</td> -->
+                     <td>{{bd.bookingType}}</td>
+                     <td>{{bd.includeEvent}}</td>
+                     <td>{{bd.includeFoodCourt}}</td>
+                     <td>{{bd.includeDecorations}}</td>
+                     <td>{{bd.includeRooms}}</td>
+                     <td>{{bd.noOfPeoples}}</td>
+                     <td>{{bd.eventDate}}</td>
+                     <td>{{bd.eventTime}}</td>
+                     <td>{{bd.bookingCharges}}</td>
+                     <td>{{bd.bookingStatus}}</td>
+                     <td><a class="btn btn-action bg-purple mr-1" data-toggle="tooltip" [routerLink]="['/admin/editBooking',bd.bookingIDPK]" title="Edit"><i
+                      class="fas fa-pencil-alt"></i></a>
+                     <td> <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" (click)="deletebooking(bd.bookingIDPK)"><i class="fas fa-trash"></i></a></td>
+                     										
+                 </tr>
+                </table>
+              </div>
+            </div>
+            
+           
+          </div>
+        </div>
+      </div>
+     </div>
+  </section>
+</div>
+<app-footer></app-footer>

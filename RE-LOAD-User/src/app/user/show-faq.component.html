@@ -1,0 +1,63 @@
+<app-header></app-header>
+
+  <div class="bradcumb-area cart overlay-bg-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="bradcumb text-center">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="single-blog-post-wrap grid isotope_wrap">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 isotope_item" *ngFor="let fd of faqData; let no = index">
+        <!-- Start single blog post -->
+        <div class="single-blog-post">
+        
+          <div class="single-post-content-thumb" >
+          
+            <!-- start entry header -->
+            <div class="entry-header">
+              <h2 class="entry-title">{{ fd.faqQuestions }}</h2>
+            </div>
+            <!-- end entry header -->
+            <!-- Start entry content -->
+            <div class="entry-content">
+              <p>{{ fd.faqAnswers }}</p>
+              <a href="/user/showFaq" class="btn more">Read More <i class="fal fa-angle-right"></i></a>
+            </div>
+            <!-- End entry content -->
+          </div>
+        </div>
+        <!-- End single blog post -->
+      </div>
+      
+      
+     
+    </div>
+  </div>
+<!-- Start Partner Area -->
+<div class="partner-area pt-110 pb-220">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- Start section title -->
+        <div class="section-title text-center">
+         
+        </div>
+        <!-- End section title -->
+      </div>
+    </div>
+ 
+  </div>
+</div>
+<!-- End Partner Area -->
+<app-footer></app-footer>

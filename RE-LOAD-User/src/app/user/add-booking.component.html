@@ -1,0 +1,124 @@
+
+      <app-header></app-header>
+        <div class="bradcumb-area style-1 overlay-bg-4">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col">
+                <!-- Start bradcumb -->
+                <div class="bradcumb text-center">
+                  <h3>Booking</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>Booking</li>
+                  </ul>
+                </div>
+                <!-- End bradcumb -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Bradcumb Area -->
+        <!-- Start Contact Area -->
+        <div class="contact-area pt-90 pb-95">
+          
+        </div>
+        <!-- End Contact Area -->
+        
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Start section title -->
+                <div class="section-title pt-80">
+                  <h3>Booking Form</h3>
+                </div>
+                <!-- End section title -->
+                <div class="contact-p-contact pb-150">
+                  <form  ngNativeValidate action="" method="post" class="gane-form" #form="ngForm" (ngSubmit)="onsubmit(form)" style="margin-bottom:70px;">
+                    
+                    
+                    <div class="single-field ">
+                      <input type="text" class="form-control" name="userName" id="userName"  ngModel required
+                      #userName="ngModel" [(ngModel)]="this.userData!.userName" placeholder="Your Name">
+                    </div>                      
+                    <div class="single-field ">
+                      <input type="text" class="form-control" name="packageName" id="packageName"  ngModel required
+                      #packageName="ngModel" [(ngModel)]="this.packageData!.packageName" placeholder="Your Name">
+                    </div>
+                      
+                    <div class="single-field ">
+                      <select class="form-control" name="bookingType" id="bookingType" ngModel required
+                      #bookingType="ngModel" [(ngModel)]="this.bookingData.bookingType" >  
+                      <option value="select">Select Type</option>  
+                      <option >Banquet Hall</option>  
+                        <option >Full Play Zone</option>
+                        <option >No</option>
+                        
+                      </select>   
+                      </div>
+                      <div class="single-field ">
+                        <select class="form-control" name="includeEvent" id="includeEvent" ngModel required
+                        #includeEvent="ngModel" [(ngModel)]="this.bookingData.includeEvent" >  
+                        <option value="select">Select Event </option>  
+                        <option >Birthday Party</option>  
+                          <option >Bussiness Meeting</option>
+                          <option >Bachelor's Party</option>
+                          <option >No</option>
+                          
+                        </select>   
+                        </div>
+                        <div class="single-field ">
+                          <select class="form-control" name="includeDecorations" id="includeDecorations" ngModel required
+                          #includeDecorations="ngModel" [(ngModel)]="this.bookingData.includeDecorations" >  
+                          <option value="select">Select Decoration </option>  
+                          <option >Yes</option>  
+                            <option >No</option>
+                            
+                          </select>   
+                          </div>
+                        
+                        <div class="single-field ">
+                          <select class="form-control" name="includeFoodCourt" id="includeFoodCourt" ngModel required
+                          #includeFoodCourt="ngModel" [(ngModel)]="this.bookingData.includeFoodCourt" >  
+                          <option value="select">Select FoodCourt </option>  
+                          <option >Yes</option>  
+                            <option >No</option>
+                            
+                          </select>   
+                          </div>
+                          <div class="single-field ">
+                            <select class="form-control" name="includeRooms" id="includeRooms" ngModel required
+                            #includeRooms="ngModel" [(ngModel)]="this.bookingData.includeRooms" >  
+                            <option value="select">Select Room </option>  
+                            <option >Yes</option>  
+                              <option >No</option>
+                              
+                            </select>   
+                            </div>
+                    <div class="single-field ">
+                      <input type="text" class="form-control" name="noofpeople" id="noOfPeoples"  ngModel required
+                      #noOfPeoples="ngModel" [(ngModel)]="this.bookingData.noOfPeoples" placeholder="No Of People">
+                    </div>
+                    
+                    <div class="single-field ">
+                      <input type="date" class="form-control" name="date" id="eventDate"  ngModel required
+                      #eventDate="ngModel" [(ngModel)]="this.bookingData.eventDate" placeholder="Date">
+                    </div>
+                    
+                    <div class="single-field ">
+                      <input type="time" class="form-control" name="eventTime" id="eventTime"  ngModel required
+                      #eventTime="ngModel" [(ngModel)]="this.bookingData.eventTime" placeholder="Time">
+                    </div>
+                    <button class="btn btn-theme" >Submit</button>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- End Contact Google map Area -->
+        
+    
+        <app-footer></app-footer>
+    
+    

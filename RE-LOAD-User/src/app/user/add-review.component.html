@@ -1,0 +1,57 @@
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <form ngNativeValidate #form="ngForm" (ngSubmit)="onsubmit(form)">
+                <div class="card-header">
+                  <h4>Add Review</h4>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" class="form-control" ngModel required
+                    #name="ngModel" [(ngModel)]="this.reviewData.reviewName">
+                  </div>
+                  <div class="form-group mb-0">
+                    <label>Email</label>
+                    <textarea class="form-control" name="email" id="email" ngModel required
+                    #email="ngModel" [(ngModel)]="this.reviewData.reviewEmail"></textarea>
+                  </div>
+                  <div class="form-group mb-0">
+                    <label>Feed Back</label>
+                    <textarea class="form-control" name="feedback" id="feedback" ngModel required
+                    #feedback="ngModel" [(ngModel)]="this.reviewData.reviewFeedBack"></textarea>
+                  </div>
+                  
+                  <div class="form-group mb-0">
+                    <label>Services</label>
+                    <textarea class="form-control" name="services" id="services" ngModel required
+                    #services="ngModel" [(ngModel)]="this.reviewData.reviewServices"></textarea>
+                  </div>
+                  <div class="form-group mb-0">
+                    <label>Location </label>
+                    <textarea class="form-control" name="location" id="location" ngModel required
+                    #location="ngModel" [(ngModel)]="this.reviewData.reviewLocation"></textarea>
+                  </div>
+                  <div class="form-group mb-0">
+                    <label> Facilities </label>
+                    <textarea class="form-control" name="facilities" id="facilities" ngModel required
+                    #facilities="ngModel" [(ngModel)]="this.reviewData.reviewFacilities"></textarea>
+                  </div>
+                </div>
+                <div class="card-footer text-right">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <app-footer></app-footer>

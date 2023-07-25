@@ -1,0 +1,42 @@
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4>Show Food Court</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-md">
+                    <tr>
+                      <th>ID</th>
+                      <th>Food Court Name</th>
+                      <th>Image</th>
+                      <th>Description</th>
+                      <th>Action</th>
+                    </tr>
+                    <tr *ngFor="let fc of foodCourtData; let no=index;">
+                      <td>{{no+1}}</td>
+                       <td>{{fc.foodCourtName}}</td>
+                       <td><img src="{{this.baseUrl + fc.foodCourtImage}}" height="150" width="150"/></td>
+                       <td>{{fc.foodCourtDescription}}</td>
+
+                       
+                       <td><a class="btn btn-action bg-purple mr-1" data-toggle="tooltip" [routerLink]="['/admin/editFoodcourt',fc.foodCourtIDPK]" title="Edit"><i
+                        class="fas fa-pencil-alt"></i></a> <a class="btn btn-danger btn-action"
+                      data-toggle="tooltip" title="Delete" (click)="deletefoodCourt(fc.foodCourtIDPK)"><i class="fas fa-trash"></i></a></td>										
+                   </tr>
+                  </table>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+  </div>
+  <app-footer></app-footer>

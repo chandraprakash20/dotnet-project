@@ -1,0 +1,15 @@
+D:\prakash\adventurePark\eOperationlib\obj\Debug\eOperationlib.csproj.AssemblyReference.cache
+D:\prakash\adventurePark\eOperationlib\obj\Debug\eOperationlib.csproj.CoreCompileInputs.cache
+D:\prakash\adventurePark\eOperationlib\bin\Debug\eOperationlib.dll.config
+D:\prakash\adventurePark\eOperationlib\bin\Debug\eOperationlib.dll
+D:\prakash\adventurePark\eOperationlib\bin\Debug\eOperationlib.pdb
+D:\prakash\adventurePark\eOperationlib\bin\Debug\eCommanLib.dll
+D:\prakash\adventurePark\eOperationlib\bin\Debug\System.Data.SqlClient.dll
+D:\prakash\adventurePark\eOperationlib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\prakash\adventurePark\eOperationlib\bin\Debug\eCommanLib.pdb
+D:\prakash\adventurePark\eOperationlib\bin\Debug\eCommanLib.dll.config
+D:\prakash\adventurePark\eOperationlib\bin\Debug\System.Data.SqlClient.xml
+D:\prakash\adventurePark\eOperationlib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\prakash\adventurePark\eOperationlib\obj\Debug\eOperationlib.csproj.CopyComplete
+D:\prakash\adventurePark\eOperationlib\obj\Debug\eOperationlib.dll
+D:\prakash\adventurePark\eOperationlib\obj\Debug\eOperationlib.pdb

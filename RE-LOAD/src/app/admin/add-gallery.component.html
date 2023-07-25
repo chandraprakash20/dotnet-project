@@ -1,0 +1,31 @@
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card">
+              <form #form="ngForm" (ngSubmit)="onsubmit(form)">
+                <div class="card-header">
+                  <h4>Add Gallery</h4>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" name="image" id="image" class="form-control" #image
+                    (change)="uploadFile(image.files)">
+                  </div>
+                </div>
+                <div class="card-footer text-right">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <app-footer></app-footer>
